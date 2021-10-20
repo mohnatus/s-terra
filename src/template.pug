@@ -1,0 +1,369 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+  body
+    <div class="page">
+      <header class="header">
+        <div class="container">
+          <div class="logo">
+            img(src=require("./img/logo.png") alt="S-terra логотип")
+          </div>
+
+          <nav class="nav">
+            <ul class="main-menu">
+              <li class="main-menu__item">О компании</li>
+              <li class="main-menu__item">Каталог</li>
+              <li class="main-menu__item">Поддержка</li>
+              <li class="main-menu__item">Пресс-центр</li>
+              <li class="main-menu__item"><a href="#">Партнёры</a></li>
+              <li class="main-menu__item"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <div class="contacts">
+            <div class="contacts__phone">
+              <a href="tel:+74999409061">8 (499) 940-90-61</a>
+            </div>
+            <div class="contacts__menu">
+              |Связаться с нами
+            </div>
+          </div>
+
+          <button type="button" class="search header-action">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"  xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.41726 1.61091C10.4959 2.68958 11.0329 4.10483 11.0281 5.51859C11.0234 6.91996 10.4865 8.31987 9.41726 9.38909C7.26938 11.537 3.78697 11.537 1.63909 9.38909C-0.508796 7.2412 -0.508796 3.7588 1.63909 1.61091C3.78697 -0.536971 7.26938 -0.536971 9.41726 1.61091ZM8.71015 8.68198C6.9528 10.4393 4.10355 10.4393 2.34619 8.68198C0.588835 6.92462 0.588835 4.07538 2.34619 2.31802C4.10355 0.560661 6.9528 0.56066 8.71015 2.31802C9.59288 3.20075 10.032 4.35693 10.0281 5.51523C10.0243 6.66332 9.58518 7.80696 8.71015 8.68198Z" fill="#000066" />
+              <path d="M8.3566 9.03553L9.06371 8.32843L13.6599 12.9246C13.8552 13.1199 13.8552 13.4365 13.6599 13.6317C13.4646 13.827 13.1481 13.827 12.9528 13.6317L8.3566 9.03553Z" fill="#000066" />
+            </svg>
+          </button>
+
+          <button type="button" class="user header-action">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.816157 13.2689C0.816147 13.2688 0.816137 13.2688 0.816127 13.2688L1 12.9955L0.816157 13.2689ZM15 12.9955L15.1839 13.2688C15.1839 13.2688 15.1839 13.2688 15.1838 13.2689L15 12.9955Z" fill="#1E1D85"  stroke="black" />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <div class="banner">
+        <div class="container">
+          <div class="banner-slider">
+            <div class="banner-slider__slides">
+              <section class="banner-slider__slide">
+                <h2 class="banner__header">Обеспечиваем современными решениями лдя построения VPN</h2>
+                <button class="banner__button" type="button">Выбрать решение</button>
+              </section>
+            </div>
+            <div class="banner-slider__navigation">
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+            </div>
+
+          </div>
+
+          <div class="banner-img">
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="achievements">
+        <div class="container">
+          -
+            var achievements = [
+              { value: '18', text: 'лет<br>работы'},
+              { value: '23', text: 'продукта в реестре<br>российского ПО'},
+              { value: '5000+', text: 'сетей защищают<br>продукты С-Терра'},
+              { value: '300+', text: 'партнеров во всех<br>регионах России'},
+              { value: '39', text: 'сертификатов ФСБ, ФСТЭК<br>и Минкомсвязи России'},
+            ]
+
+          each item in achievements
+            .achievement
+              .achievement__value= item.value
+              .achievement__text !{item.text}
+
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="container">
+          <section class="info-company">
+            <div class="info-company__container">
+              <div class="info-company__icon"></div>
+              <div class="info-company__content">
+                <h2 class="info-company__title">Разрабатываем и производим сердства сетевой информационной безопасности
+                </h2>
+                <div class="info-company__text">На основе технологии IPsec VPN обеспечиваем защиту межсетевых взаимодействий, беспроводных и мультисервисных сетей, безопасность работы удаленных и мобильных пользователей.</div>
+                <div class="info-company__link">
+                  <a href="#">О компании</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="info-products">
+            <div class="info-products__container">
+              <h2 class="info-products__title">Вся продуктовая линейка ООО «С-Терра СиЭсПи»</h2>
+              <div class="info-products__text">Ознакомьтесь с линейкой нашей продукции</div>
+              <div class="info-products__link">
+                <a href="#">Перейти в каталог</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="partners">
+        <div class="container">
+          <div class="partners-slider">
+            <div clas="partners-slider__slides">
+              -
+                var partners = [
+                  { img: require("./img/partners/1.png"), alt: ''},
+                  { img: require("./img/partners/2.png"), alt: ''},
+                  { img: require("./img/partners/3.png"), alt: ''},
+                  { img: require("./img/partners/1.png"), alt: ''},
+                  { img: require("./img/partners/2.png"), alt: ''},
+                ]
+
+              each partner in partners
+                .partners-slider__slide
+                  img(src=partner.img alt=partner.alt)
+            </div>
+
+            <div class="partners-slider__controls">
+              <button type="button" class="partners-slider__control partners-slider__prev prev-button"></button>
+              <button type="button" class="partners-slider__control partners-slider__next next-button"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="white-block">
+
+        <section class="solutions">
+          <div class="container">
+            <header class="solutions__header">
+              <h2 class="solutions__title">Наши решения</h2>
+              <ul class="solutions-menu">
+                <li class="solutions-menu__item">
+                  <a href="#" class="active">Все</a>
+                </li>
+                <li class="solutions-menu__item">
+                  <a href="#">Комплексные</a>
+                </li>
+                <li class="solutions-menu__item">
+                  <a href="#">Отраслевые</a>
+                </li>
+              </ul>
+            </header>
+          </div>
+
+          <div class="solutions-slider">
+            <div class="solutions-slider__slides">
+              -
+                var solutions = [
+                  {
+                    group: 'Комплексное решение',
+                    title: 'Защита удаленного доступа',
+                    icon: require("./img/solutions/1.png")
+                  },
+                  {
+                    group: 'Комплексное решение',
+                    title: 'Защита персональных данных',
+                    icon: require("./img/solutions/2.png")
+                  },
+                  {
+                    group: 'Комплексное решение',
+                    title: 'Защита межфилиальных взаимодействий',
+                    icon: require("./img/solutions/3.png")
+                  }
+                ]
+              each solution in solutions
+                section.solutions-slider__slide.solution
+                  .solution__group= solution.group
+                  h3.solution__group= solution.faq__title
+                  .solution__icon
+                    img(src=solution.icon alt="")
+
+            </div>
+            <div class="solutions-slider__controls">
+              <div class="container">
+                <button type="button" class="solutions-slider__control solutions-slider__prev"></button>
+                <button type="button" class="solutions-slider__control solutions-slider__next"></button>
+                <a href="#" class="solutions-slider__link">Каталог решений</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="docs">
+          <div class="container">
+            <div class="docs__container">
+              <section class="docs-item">
+                <div class="docs-item__container">
+                  <h2 class="docs-item__title">Международные технические стандарты IPsec</h2>
+                  <div class="docs-item__link">
+                    <a href="#">Подробнее</a>
+                  </div>
+
+                  <div class="docs-item__icon"></div>
+                </div>
+              </section>
+
+              <section class="docs-item">
+                <div class="docs-item__container">
+                  <h2 class="docs-item__title">Сертификация в органах ФСБ и ФСТЭК России</h2>
+                  <div class="docs-item__link">
+                    <a href="#">Подробнее</a>
+                  </div>
+
+                  <div class="docs-item__icon"></div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <section class="faq">
+          <div class="faq__container">
+            <h2 class="faq__title">
+              |Как начать работать с нами
+            </h2>
+            <div class="faq-accordion">
+              -
+                var faq = [
+                  {
+                    title: 'Как подобрать решение и составить спецификацию',
+                    text: 'Мы подготовили <a href="#" download>опросный лист</a>, который поможет нашим инженерам получить представление о задаче и начать конструктивный диалог. Пришлите ответы на <a href="mailto:presale@s-terra.ru">presale@s-terra.ru</a>.Далее с вами свяжется инженер и уточнит детали. В итоге Вы получите правильную спецификацию и наши менеджеры дадут коммерческое предложение. Если Вы составили спецификацию самостоятельно, пришлите нам ее на проверку.'
+                  },
+                  {
+                    title: 'Как получить VPN продукты в тестирование',
+                    text: 'Мы подготовили <a href="#" download>опросный лист</a>, который поможет нашим инженерам получить представление о задаче и начать конструктивный диалог. Пришлите ответы на <a href="mailto:presale@s-terra.ru">presale@s-terra.ru</a>.Далее с вами свяжется инженер и уточнит детали. В итоге Вы получите правильную спецификацию и наши менеджеры дадут коммерческое предложение. Если Вы составили спецификацию самостоятельно, пришлите нам ее на проверку.'
+                  },
+                  {
+                    title: 'Как стать партнером',
+                    text: 'Мы подготовили <a href="#" download>опросный лист</a>, который поможет нашим инженерам получить представление о задаче и начать конструктивный диалог. Пришлите ответы на <a href="mailto:presale@s-terra.ru">presale@s-terra.ru</a>.Далее с вами свяжется инженер и уточнит детали. В итоге Вы получите правильную спецификацию и наши менеджеры дадут коммерческое предложение. Если Вы составили спецификацию самостоятельно, пришлите нам ее на проверку.'
+                  }
+                ]
+              each item in faq
+                section.faq-item
+                  header.faq-item__header
+                    h2.faq-item__title !{item.title}
+                    .faq-item__state
+                  .faq-item__content !{item.text}
+
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <section class="cooperation">
+        <div class="container">
+          <h2 class="cooperation__title">Истории сотрудничества</h2>
+        </div>
+        <div class="cooperation-slider">
+          <div class="cooperation-slider__slides">
+            -
+              var cases = [
+                {
+                  logo: require("./img/cases/1.png" ),
+                  title: '«Ростелеком-Солар», компания группы ПАО «Ростелеком»',
+                  text: 'Компании планируют создавать на базе собственных продуктов и услуг новые совместные комплексные решения по информационной безопасности, отвечающие на самые актуальные вызовы в сфере защиты от киберугроз.'
+                },
+                {
+                  logo: require("./img/cases/2.png" ),
+                  title: '«Аквариус»',
+                  text: 'Цель сотрудничества — импортозамещение в сфере информационной безопасности. Серверные системы Aquarius состоят в Едином реестре российской радиоэлектронной продукции Минпромторга России.'
+                },
+                {
+                  logo: require("./img/cases/3.png" ),
+                  title: '«АТБ Электроника»',
+                  text: 'Созданный альянс способствует развитию импортозамещения на российском рынке информационной безопасности. Сертифицированные ФСБ России VPN-шлюзы С-Терра, состоящие в Едином реестре российских программ для ЭВМ и баз данных, получат российскую серверную часть «АТБ-АТОМ».'
+                }
+              ]
+            each caseItem in cases
+              section.cooperation-slider__slide.case
+                .case__container
+                  .case__logo
+                    img(src=caseItem.logo)
+                  h3.case__title !{caseItem.title}
+                  .case__text !{caseItem.text}
+
+
+          </div>
+          <div class="container">
+            <div class="cooperation-slider__controls">
+              <button type="button" class="cooperation-slider__control cooperation-slider__prev prev-button"></button>
+              <button type="button" class="cooperation-slider__control cooperation-slider__next next-button"></button>
+              <a href="#" class="btn cooperation-slider__link">Все истории</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="news">
+        <div class="container">
+          <h2 class="news__title">Новости и события</h2>
+        </div>
+        <div class="news-slider">
+          <div class="news-slider__slides">
+            -
+              var articles = [
+                {
+                  img: require('./img/news/1.png'),
+                  link: "#",
+                  date: '7 октября 2021',
+                  title: 'С-Терра на GIS Days 2021',
+                  text: 'Компания «С-Терра СиЭсПи» принимает участие в форуме «Global Information Security Days 2021», посвященном технологической безопасности и новой киберреальности. ',
+                },
+                {
+                  img: require('./img/news/2.png'),
+                  link: "#",
+                  date: '9 июня 2021',
+                  title: 'С-Терра TLS Шлюз 4.3 успешно прошел испытания',
+                  text: 'Доказана совместимость С‑Терра TLS Шлюз 4.3 и эталонной реализации российских криптоалгоритмов для протокола TLS 1.2.',
+                },
+                {
+                  img: require('./img/news/3.png'),
+                  link: "#",
+                  date: '21 мая 2021',
+                  title: 'Итоги вебинара про С-Терра КП и С-Терра Клиент',
+                  text: '20 мая 2021 г «С‑Терра СиЭсПи» провела вебинар «Версия 4.3. С‑Терра КП и С‑Терра Клиент». Презентация и запись вебинара размещены на сайте',
+                },
+                {
+                  img: require('./img/news/4.png'),
+                  link: "#",
+                  date: '30 марта 2020',
+                  title: 'Решения С-Терра для подключения к Единому Порталу Тестирования Ростехнадзора',
+                  text: 'Решения С-Терра защищают доступ при аттестации работников в области промышленной безопасности.',
+                }
+              ]
+
+            each article in articles
+              section.news-slider__slide.article
+                a.article__container(href=article.link)
+                  .article__img
+                    img(src=article.img)
+                  .article__date= article.date
+                  h3.article__title= article.title
+                  .article__title !{article.text}
+
+          </div>
+          <div class="container">
+            <div class="news-slider__controls">
+              button.news-slider__control.news-slider__prev.prev-button(type="button")
+              button.news-slider__control.news-slider__next.next-button(type="button")
+              a.button(href="#") Пресс-центр
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>

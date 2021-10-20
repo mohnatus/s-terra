@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -22,6 +23,10 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.pug$/,
+        use: 'pug-loader'
+      },
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -44,7 +49,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'STerra',
-      template: path.resolve(__dirname, './src/template.html'), // шаблон
+      template: path.resolve(__dirname, './src/template.pug'), // шаблон
       filename: 'index.html' // название выходного файла
     }),
     new CleanWebpackPlugin(),
