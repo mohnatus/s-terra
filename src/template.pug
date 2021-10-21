@@ -54,72 +54,73 @@ html(lang="ru")
                 button(type="button")
             .banner-img.lighthouse
 
-        .achivements
-          .container
+        .colored-block
+          .achivements
+            .container
 
-            -
-              var achievements = [
-                { value: '18', text: 'лет<br>работы'},
-                { value: '23', text: 'продукта в реестре<br>российского ПО'},
-                { value: '5000+', text: 'сетей защищают<br>продукты С-Терра'},
-                { value: '300+', text: 'партнеров во всех<br>регионах России'},
-                { value: '39', text: 'сертификатов ФСБ, ФСТЭК<br>и Минкомсвязи России'},
-              ]
-
-            each item in achievements
-              .achievement
-                .achievement__bullet
-                .achievement__value= item.value
-                .achievement__text !{item.text}
-
-        .info
-          .container
-            section.info-company
-              .info-company__container
-                .info-company__icons
-                .info-company__content
-                  h2.info-company__title Разрабатываем и производим сердства сетевой информационной безопасности
-
-                  .info-company__text На основе технологии IPsec VPN обеспечиваем защиту межсетевых взаимодействий, беспроводных и мультисервисных сетей, безопасность работы удаленных и мобильных пользователей.
-                  .info-company__link
-                    a.btn(href="#") О компании
-                  </div>
-                </div>
-              </div>
-
-            section.info-products
-              .info-products__container
-                h2.info-products__title Вся продуктовая линейка ООО «С-Терра СиЭсПи»
-                div.info-products__text Ознакомьтесь с линейкой нашей продукции
-                div.info-products__link
-                  a.btn.btn-danger(href="#") Перейти в каталог
-
-        .partners
-          .partners-slider.slider
-            .slider__slides
               -
-                var partners = [
-                  { img: require("./img/partners/1.png"), alt: ''},
-                  { img: require("./img/partners/2.png"), alt: ''},
-                  { img: require("./img/partners/3.png"), alt: ''},
-                  { img: require("./img/partners/1.png"), alt: ''},
-                  { img: require("./img/partners/2.png"), alt: ''},
+                var achievements = [
+                  { value: '18', text: 'лет<br>работы'},
+                  { value: '23', text: 'продукта в реестре<br>российского ПО'},
+                  { value: '5000+', text: 'сетей защищают<br>продукты С-Терра'},
+                  { value: '300+', text: 'партнеров во всех<br>регионах России'},
+                  { value: '39', text: 'сертификатов ФСБ, ФСТЭК<br>и Минкомсвязи России'},
                 ]
 
-              each partner in partners
-                .slider__slide
-                  img(src=partner.img alt=partner.alt)
+              each item in achievements
+                .achievement
+                  .achievement__bullet
+                  .achievement__value= item.value
+                  .achievement__text !{item.text}
 
+          .info
             .container
-              .slider__controls
-                button.slider__control.slider__prev.btn.btn-circle(type="button")
-                  svg(width="7" height="12")
-                    use(xlink:href="#arrow-left" href="#arrow-left")
-                button.slider__control.slider__next.btn.btn-circle(type="button")
-                  svg(width="7" height="12")
-                    use(xlink:href="#arrow-right" href="#arrow-right")
+              section.info-company
+                .info-company__container
+                  .info-company__icons
+                  .info-company__content
+                    h2.info-company__title Разрабатываем и производим сердства сетевой информационной безопасности
 
-        .white-block
+                    .info-company__text На основе технологии IPsec VPN обеспечиваем защиту межсетевых взаимодействий, беспроводных и мультисервисных сетей, безопасность работы удаленных и мобильных пользователей.
+                    .info-company__link
+                      a.btn(href="#") О компании
+                    </div>
+                  </div>
+                </div>
+
+              section.info-products
+                .info-products__container
+                  h2.info-products__title Вся продуктовая линейка ООО «С-Терра СиЭсПи»
+                  div.info-products__text Ознакомьтесь с линейкой нашей продукции
+                  div.info-products__link
+                    a.btn.btn-danger(href="#") Перейти в каталог
+
+          .partners
+            .partners-slider.slider
+              .slider__slides
+                -
+                  var partners = [
+                    { img: require("./img/partners/1.png"), alt: ''},
+                    { img: require("./img/partners/2.png"), alt: ''},
+                    { img: require("./img/partners/3.png"), alt: ''},
+                    { img: require("./img/partners/1.png"), alt: ''},
+                    { img: require("./img/partners/2.png"), alt: ''},
+                  ]
+
+                each partner in partners
+                  .slider__slide
+                    img(src=partner.img alt=partner.alt)
+
+              .container
+                .slider__controls
+                  button.slider__control.slider__prev.btn.btn-circle(type="button")
+                    svg(width="7" height="12")
+                      use(xlink:href="#arrow-left" href="#arrow-left")
+                  button.slider__control.slider__next.btn.btn-circle(type="button")
+                    svg(width="7" height="12")
+                      use(xlink:href="#arrow-right" href="#arrow-right")
+
+        .lines-block
 
           section.solutions
             .container
@@ -220,7 +221,7 @@ html(lang="ru")
                       .faq-item__state
                     .faq-item__content !{item.text}
 
-        section.cooperation
+        section.colored-block.cooperation
           .container
             h2.cooperation__title Истории сотрудничества
 
@@ -262,7 +263,7 @@ html(lang="ru")
                     use(xlink:href="#arrow-right" href="#arrow-right")
                 a.btn.slider__link(href="#") Все истории
 
-        .news
+        .news.lines-block
           .container
             h2.news__title Новости и события
 
@@ -320,7 +321,7 @@ html(lang="ru")
                     use(xlink:href="#arrow-right" href="#arrow-right")
                 a.btn.slider__link(href="#") Пресс-центр
 
-        .form
+        .form.colored-block
           .form__container
             h2.form__title Хотите, чтобы мы с вами связались?
             .form__subtitle Оставьте свои контакты
