@@ -1,14 +1,22 @@
-$blue1: #1E1D85;
+$blue1: #1e1d85;
 $blue2: #000066;
 
-$light1: #DEDEF4;
-$light2: #F6F6FF;
-$light3: #7373BA;
+$light1: #dedef4;
+$light2: #f6f6ff;
+$light3: #7373ba;
 
-$red: #E42D24;
+$red: #e42d24;
 
 $primary: $blue1;
 $secondary: $light3;
 $accent: $red;
 $border: $light2;
 $bg: $light1;
+
+$containerPadding: 70px;
+$containerMaxWidth: 1440px;
+@mixin moreThanContainer {
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}

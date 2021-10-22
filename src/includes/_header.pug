@@ -1,0 +1,24 @@
+header.header
+  .container
+    .header__wrapper
+      .logo
+        img(src=require("../img/logo.png") alt="С-Терра логотип")
+      nav.nav
+        ul.main-menu
+          li.main-menu__item О компании
+          li.main-menu__item Каталог
+          li.main-menu__item Поддержка
+          li.main-menu__item Пресс-центр
+          li.main-menu__item
+            a(href="#") Партнёры
+          li.main-menu__item
+            a(href="#") Контакты
+      .contacts
+        .contacts__phone
+          a(href="tel:+74999409061") 8 (499) 940-90-61
+        .contacts__menu
+          |Связаться с нами
+      button.search.header-action(type="button")
+        img(src=require('../img/icons/search.svg') alt="")
+      button.user.header-action( type="button" )
+        img(src=require('../img/icons/user.svg') alt="")

@@ -1,0 +1,24 @@
+.form.colored-block
+  .form__container
+    h2.form__title Хотите, чтобы мы с вами связались?
+    .form__subtitle Оставьте свои контакты
+
+  .form__wrapper
+    .form__image
+    .form__fields
+      .form__field
+        input(type="text" value="Иванов Петр")
+      .form__field
+        input(type="text" value="ООО «Энергия»")
+      .form__field
+        input(type="text" value="ivanov@energy.ru")
+      .form__field
+        input(type="text" value="Номер телефона")
+      .form__field
+        textarea Комментариий (необязательно)
+      .form__confirm
+        .checkbox
+          input(type="checkbox" checked)
+          .checkbox__label Даю согласие на обработку своих персональных данных в соответствии с #[a(href="#") Политикой обработки персональных данных ООО «С-Терра СиЭсПи»].
+      .form__submit
+        button(type="submit") Отправить

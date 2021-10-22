@@ -1,0 +1,17 @@
+.achivements
+  .container
+
+    -
+      var achievements = [
+        { value: '18', text: 'лет<br>работы'},
+        { value: '23', text: 'продукта в реестре<br>российского ПО'},
+        { value: '5000+', text: 'сетей защищают<br>продукты С-Терра'},
+        { value: '300+', text: 'партнеров во всех<br>регионах России'},
+        { value: '39', text: 'сертификатов ФСБ, ФСТЭК<br>и Минкомсвязи России'},
+      ]
+
+    each item in achievements
+      .achievement
+        .achievement__bullet
+        .achievement__value= item.value
+        .achievement__text !{item.text}
