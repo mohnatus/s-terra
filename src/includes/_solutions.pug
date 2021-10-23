@@ -3,42 +3,41 @@ section.solutions
     header.solutions__header
       h2.solutions__title Наши решения
       ul.solutions-menu
-        li.solutions-menu__item
-          a.active(href="#") Все
+        li.solutions-menu__item.active
+          a(href="#") Все
         li.solutions-menu__item
           a(href="#") Комплексные
         li.solutions-menu__item
           a(href="#") Отраслевые
 
-  .solutions-slider.swiper
-    .swiper-wrapper
-      -
-        var solutions = [
-          {
-            group: 'Комплексное решение',
-            title: 'Защита удаленного доступа',
-            icon: require("../img/solutions/1.png")
-          },
-          {
-            group: 'Комплексное решение',
-            title: 'Защита персональных данных',
-            icon: require("../img/solutions/2.png")
-          },
-          {
-            group: 'Комплексное решение',
-            title: 'Защита межфилиальных взаимодействий',
-            icon: require("../img/solutions/3.png")
-          }
-        ]
+    .solutions-slider.swiper
+      .swiper-wrapper
+        -
+          var solutions = [
+            {
+              group: 'Комплексное решение',
+              title: 'Защита удаленного доступа',
+              icon: require("../img/solutions/1.png")
+            },
+            {
+              group: 'Комплексное решение',
+              title: 'Защита персональных данных',
+              icon: require("../img/solutions/2.png")
+            },
+            {
+              group: 'Комплексное решение',
+              title: 'Защита межфилиальных взаимодействий',
+              icon: require("../img/solutions/3.png")
+            }
+          ]
 
-      each solution in solutions
-        section.swiper-slide.solution
-          .solution__group= solution.group
-          h3.solution__group= solution.faq__title
-          .solution__icon
-            img(src=solution.icon alt="")
+        each solution in solutions
+          section.swiper-slide.solution
+            .solution__group= solution.group
+            h3.solution__title= solution.title
+            .solution__icon
+              img(src=solution.icon alt="")
 
-    .container
       .swiper-controls
         button.swiper-control.swiper-prev.btn.btn-circle(type="button")
           svg(width="7" height="12")

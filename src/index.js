@@ -23,6 +23,22 @@ new Swiper('.banner-slider', {
   {
     el: '.partners-slider',
     slidesPerView: 6
+  },
+  {
+    el: '.solutions-slider',
+    slidesPerView: 3
+  },
+  {
+    el: '.cooperations-slider',
+    slidesPerView: 3
+  },
+  {
+    el: '.cases-slider',
+    slidesPerView: 3
+  },
+  {
+    el: '.news-slider',
+    slidesPerView: 4
   }
 ].forEach((config) => {
   let cb = (swiper) => {
@@ -37,7 +53,7 @@ new Swiper('.banner-slider', {
     });
   };
 
-  let slider = new Swiper(config.el, {
+  new Swiper(config.el, {
     loop: true,
     navigation,
     slidesPerView: config.slidesPerView,
@@ -47,32 +63,4 @@ new Swiper('.banner-slider', {
       slideChange: cb
     }
   });
-});
-
-new Swiper('.solutions-slider', {
-  loop: true,
-  navigation,
-  slidesPerView: 3,
-  spaceBetween: 24
-});
-
-new Swiper('.cooperation-slider', {
-  loop: true,
-  navigation,
-  slidesPerView: 3,
-  spaceBetween: 24
-});
-
-new Swiper('.cases-slider', {
-  loop: true,
-  navigation,
-  slidesPerView: 3,
-  spaceBetween: 24
-});
-
-new Swiper('.news-slider', {
-  loop: true,
-  navigation,
-  slidesPerView: 4,
-  spaceBetween: 24
 });
