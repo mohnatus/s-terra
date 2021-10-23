@@ -34,6 +34,16 @@
     padding: 0;
   }
 
+  &-primary {
+    background: $primary;
+    color: white;
+    border-color: $primary;
+
+    &:hover {
+      border-color: $primary;
+    }
+  }
+
   &-accent {
     background: $accent;
     color: white;
@@ -42,5 +52,9 @@
     &:hover {
       border-color: $accent;
     }
+  }
+
+  &-block {
+    width: 100%;
   }
 }

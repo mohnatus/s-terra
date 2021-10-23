@@ -1,0 +1,62 @@
+input,
+textarea {
+  border: 1px solid $light1;
+  padding: 10px 20px;
+  background: transparent;
+  width:: 100%;
+}
+
+input {
+  height: 50px;
+}
+
+textarea {
+  height: 95px;
+  resize: vertical;
+}
+
+.checkbox {
+  display: flex;
+  cursor: pointer;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    clip-path: rect(0, 0, 0, 0);
+  }
+
+  &__box {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid $light1;
+    margin-right: 12px;
+    cursor: pointer;
+  }
+
+  &__label {
+    font-size: 12px;
+    padding-top: 3px;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  input:checked ~ &__box {
+    background-color: $primary;
+    border-color: $primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 12px;
+      height: 10px;
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.03125 4L4.96875 8L10.9688 1.9375' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    }
+
+  }
+}

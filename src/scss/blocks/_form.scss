@@ -1,0 +1,43 @@
+.form {
+  padding-top: 102px;
+  padding-bottom: 125px;
+
+  &__title {
+    color: $dark;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 12;
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-size: 17px;
+    margin-bottom: 57px;
+    text-align: center;
+  }
+
+  &__wrapper {
+    max-width: 862px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  &__image {
+    margin-left: -30px;
+    padding-right: 80px;
+  }
+
+  &__fields {
+    width: 607px;
+    flex-shrink: 0;
+  }
+
+  &__field {
+    margin-bottom: 20px;
+  }
+
+  &__submit {
+    margin-top: 32px;
+  }
+}
