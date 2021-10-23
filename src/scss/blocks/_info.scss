@@ -96,11 +96,12 @@ $circleGroupDelay: 357ms;
   }
 
   .info-products {
+    min-height: 370px;
     color: white;
     position: relative;
     background-color: $primary;
-    //background-image: url('./img/products.png');
-    background-position: bottom right;
+    background-image: url('./img/products.png');
+    background-position: bottom 30px right 0;
     background-repeat: no-repeat;
 
     &__container {
