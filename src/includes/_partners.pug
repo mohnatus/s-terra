@@ -17,14 +17,13 @@
           ]
 
         each partner in partners
-          .swiper-slide
+          .swiper-slide.partner
             img(src=partner.img alt=partner.alt)
 
-      .container
-        .swiper-controls
-          button.swiper-control.swiper-prev.btn.btn-circle(type="button")
-            svg(width="7" height="12")
-              use(xlink:href="#arrow-left" href="#arrow-left")
-          button.swiper-control.swiper-next.btn.btn-circle(type="button")
-            svg(width="7" height="12")
-              use(xlink:href="#arrow-right" href="#arrow-right")
+      .swiper-controls
+        button.swiper-control.swiper-prev.btn.btn-circle(type="button")
+          svg(width="7" height="12")
+            use(xlink:href="#arrow-left" href="#arrow-left")
+        button.swiper-control.swiper-next.btn.btn-circle(type="button")
+          svg(width="7" height="12")
+            use(xlink:href="#arrow-right" href="#arrow-right")

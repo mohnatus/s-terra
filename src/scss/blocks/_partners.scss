@@ -1,3 +1,11 @@
 .partners {
-  
+  margin-top: 80px;
+  margin-bottom: 84px;
+  .partner {
+    background: white;
+    height: 116px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

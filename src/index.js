@@ -19,11 +19,34 @@ new Swiper('.banner-slider', {
   pagination
 });
 
-new Swiper('.partners-slider', {
-  loop: true,
-  navigation,
-  slidesPerView: 6,
-  spaceBetween: 24
+[
+  {
+    el: '.partners-slider',
+    slidesPerView: 6
+  }
+].forEach((config) => {
+  let cb = (swiper) => {
+    let startIndex = swiper.activeIndex;
+    let endIndex = swiper.activeIndex + config.slidesPerView;
+
+    swiper.slides.forEach((slide, i) => {
+      console.log(i, startIndex, endIndex);
+      if (i >= startIndex && i < endIndex)
+        slide.removeAttribute('data-invisible');
+      else slide.setAttribute('data-invisible', true);
+    });
+  };
+
+  let slider = new Swiper(config.el, {
+    loop: true,
+    navigation,
+    slidesPerView: config.slidesPerView,
+    spaceBetween: 24,
+    on: {
+      afterInit: cb,
+      slideChange: cb
+    }
+  });
 });
 
 new Swiper('.solutions-slider', {
@@ -53,5 +76,3 @@ new Swiper('.news-slider', {
   slidesPerView: 4,
   spaceBetween: 24
 });
-
-console.log('hello');

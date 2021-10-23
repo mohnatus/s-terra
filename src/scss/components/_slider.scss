@@ -1,3 +1,15 @@
 .swiper {
   overflow: visible;
+
+  .swiper-controls {
+    margin-top: 30px;
+  }
+
+  .swiper-prev {
+    margin-right: 10px;
+  }
+
+  .swiper-slide {
+    &[data-invisible] { opacity: 0.5; }
+  }
 }
