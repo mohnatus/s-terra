@@ -8,4 +8,10 @@
     align-items: center;
     justify-content: center;
   }
+
+  &-slider {
+    .swiper-control {
+      border: none!important;
+    }
+  }
 }

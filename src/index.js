@@ -19,7 +19,8 @@ const navigation = {
 };
 new Swiper('.banner-slider', {
   loop: true,
-  pagination
+  pagination,
+  spaceBetween: 24,
 });
 
 [
