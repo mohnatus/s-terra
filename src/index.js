@@ -70,4 +70,6 @@ new Swiper('.banner-slider', {
 });
 
 
-new Accordion('.faq-accordion')
+new Accordion('.faq-accordion');
+
+

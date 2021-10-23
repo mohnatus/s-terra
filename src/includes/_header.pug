@@ -40,6 +40,28 @@ header.header
             |Связаться с нами
             svg.contacts-menu__toggler(width="9" height="5")
               use(xlink:href="#arrow-down" href="#arrow-down")
+          .contacts-menu__panel
+            section.contacts-menu-section
+              .contacts-menu-section__title Напишите нам
+              a.underlined(href="#") information@s-terra.ru
+            section.contacts-menu-section
+              .contacts-menu-section__title Мы в мессенджерах
+              div.contacts-menu-section__icons
+                a(href="#")
+                  img(src=require('../img/socials/wa.png'))
+                a(href="#")
+                  img(src=require('../img/socials/tg.png'))
+            section.contacts-menu-section
+              .contacts-menu-section__title Мы в соцсетях
+              div.contacts-menu-section__icons
+                a(href="#")
+                  img(src=require('../img/socials/fb.png'))
+                a(href="#")
+                  img(src=require('../img/socials/yt.png'))
+                a(href="#")
+                  img(src=require('../img/socials/vk.png'))
+                a(href="#")
+                  img(src=require('../img/socials/in.png'))
       button.search.header-action(type="button")
         img(src=require('../img/icons/search.svg') alt="")
       button.user.header-action( type="button" )
