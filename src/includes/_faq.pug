@@ -2,7 +2,7 @@ section.faq
   .faq__container
     h2.faq__title Как начать работать с нами
 
-    .faq-accordion
+    .faq-accordion.accordion-container
       -
         var faq = [
           {
@@ -19,9 +19,9 @@ section.faq
           }
         ]
       each item in faq
-        section.faq-item
-          header.faq-item__header
-            h2.faq-item__title !{item.title}
-            .faq-item__state
-          .faq-item__content !{item.text}
-
+        section.faq-item.ac
+          header.faq-item__header.ac-header
+            .ac-trigger
+              h2.faq-item__title !{item.title}
+              .faq-item__state
+          .faq-item__content.ac-panel !{item.text}

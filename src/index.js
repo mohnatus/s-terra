@@ -4,6 +4,9 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './style.scss';
 
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
+
 Swiper.use([Navigation, Pagination]);
 
 const pagination = {
@@ -64,3 +67,6 @@ new Swiper('.banner-slider', {
     }
   });
 });
+
+
+new Accordion('.faq-accordion')
