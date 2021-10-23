@@ -9,6 +9,16 @@
     margin-right: 10px;
   }
 
+  .swiper-button-disabled {
+    cursor: default;
+    &:hover {
+      border-color: $border;
+    }
+    svg {
+      opacity: 0.6;
+    }
+  }
+
   .swiper-slide {
     height: auto;
     &[data-invisible] { opacity: 0.3; }
