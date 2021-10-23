@@ -1,0 +1,33 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+
+  height: 42px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 24px;
+
+  background: transparent;
+  color: $primary;
+  border-color: $border;
+
+  &-lg {
+    height: 54px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 17px;
+    border-radius: 28px;
+  }
+
+  &-accent {
+    background: $accent;
+    color: white;
+    border-color: $accent;
+  }
+}

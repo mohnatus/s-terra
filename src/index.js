@@ -7,7 +7,8 @@ import './style.scss';
 Swiper.use([Navigation, Pagination]);
 
 const pagination = {
-  el: '.swiper-pagination'
+  el: '.swiper-pagination',
+  clickable: true
 };
 const navigation = {
   nextEl: '.swiper-next',
