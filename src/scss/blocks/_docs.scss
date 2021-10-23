@@ -82,13 +82,13 @@
         }
       }
       .tablet {
-        animation-name: tabletsMove;
-        animation-duration: 2000ms;
+        animation-name: tablet1Move;
+        animation-duration: 2500ms;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
 
         &-1 {
-          animation-delay: 300ms;
+          animation-name: tablet2Move;
         }
       }
     }
@@ -110,7 +110,22 @@
   }
 }
 
-@keyframes tabletsMove {
+@keyframes tablet1Move {
+  from {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-9px);
+  }
+  75% {
+    transform: translateY(4px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes tablet2Move {
   from {
     transform: translateY(0);
   }

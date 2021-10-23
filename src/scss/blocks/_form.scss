@@ -38,14 +38,14 @@
       animation-name: envelopeMove;
       animation-timing-function: ease-in-out;
       animation-iteration-count: infinite;
-      animation-duration: 2000ms;
+      animation-duration: 3000ms;
 
 
       .envelope-inner {
         animation-name: envelopeScale;
         animation-timing-function: ease-in-out;
         animation-iteration-count: infinite;
-        animation-duration: 2000ms;
+        animation-duration: 3000ms;
         transform-origin: 80% 20%;
       }
 
@@ -130,6 +130,9 @@
 @keyframes envelopeScale {
   from {
     transform: scale(1);
+    opacity: 1;
+  }
+  50% {
     opacity: 1;
   }
   90% {
