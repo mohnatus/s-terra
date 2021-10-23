@@ -10,6 +10,7 @@
   }
 
   .swiper-slide {
+    height: auto;
     &[data-invisible] { opacity: 0.5; }
   }
 }

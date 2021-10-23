@@ -24,11 +24,10 @@ section.colored-block.cooperation
           ]
         each caseItem in cases
           section.swiper-slide.case
-            .case__container
-              .case__logo
-                img(src=caseItem.logo)
-              h3.case__title !{caseItem.title}
-              .case__text !{caseItem.text}
+            .case__logo
+              img(src=caseItem.logo)
+            h3.case__title !{caseItem.title}
+            .case__text !{caseItem.text}
 
       .swiper-controls
         button.swiper-control.swiper-prev.btn.btn-circle(type="button")

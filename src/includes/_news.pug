@@ -39,11 +39,10 @@
         each article in articles
           section.swiper-slide.article
             a.article__container(href=article.link)
-              .article__img
-                img(src=article.img)
+              img.article__img(src=article.img)
               .article__date= article.date
               h3.article__title= article.title
-              .article__title !{article.text}
+              .article__text !{article.text}
 
 
 

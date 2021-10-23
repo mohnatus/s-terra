@@ -1,0 +1,30 @@
+.cooperation {
+  padding-top: 102px;
+  padding-bottom: 106px;
+
+  &__title {
+    font-size: 46px;
+    color: $dark;
+    margin-bottom: 50px;
+  }
+
+  .case {
+    background: white;
+    padding: 45px 40px 55px;
+
+    &__logo {
+      margin-bottom: 24px;
+    }
+
+    &__title {
+      margin-bottom: 12px;
+      font-size: 24px;
+      font-weight: 700;
+      color: $dark;
+    }
+
+    &__text {
+
+    }
+  }
+}

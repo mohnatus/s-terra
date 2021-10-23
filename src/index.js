@@ -32,7 +32,7 @@ new Swiper('.banner-slider', {
     slidesPerView: 3
   },
   {
-    el: '.cooperations-slider',
+    el: '.cooperation-slider',
     slidesPerView: 3
   },
   {
