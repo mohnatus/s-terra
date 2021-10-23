@@ -17,6 +17,56 @@ header.header
                 |Каталог
                 svg.menu-section__toggler(width="9" height="5")
                   use(xlink:href="#arrow-down" href="#arrow-down")
+              .menu-section__panel.dropdown-menu
+                .container
+                  .dropdown-menu__wrapper
+                    .dropdown-menu__column
+                      .dropdown-menu__title Каталог
+                      .dropdown-menu__description Поможем защитить<br>информационную систему<br>любого масштаба
+
+                    -
+                      var menuColumns = [
+                        {
+                          items: [
+                            { link: '#',  name: 'Продукты', title: true },
+                            { link: '#', name: 'Программные средства', },
+                            { link: '#', name: 'Шлюзы безопасности', },
+                            { link: '#', name: 'Специальные решения', },
+                            { link: '#', name: 'Система управления', },
+                            { link: '#',  name: 'Криптография ST', title: true },
+                            { link: '#',  name: 'Прайс-листы', title: true },
+                          ]
+                        },
+                        {
+                          items: [
+                            { link: '#',  name: 'Отраслевые решения', title: true },
+                            { link: '#', name: 'Финансовый сектор', },
+                            { link: '#', name: 'Государственный сектор', },
+                            { link: '#', name: 'Топливно-энергетическая отрасль', },
+                            { link: '#', name: 'Телекоммуникационная отрасль', },
+                          ]
+                        },
+                        {
+                          items: [
+                            { link: '#',  name: 'Продукты', title: true },
+                            { link: '#', name: 'Защита канала 10 Гбит и больше', },
+                            { link: '#', name: 'Обнаружение вторжений', },
+                            { link: '#', name: 'Защита удаленного доступа', },
+                            { link: '#', name: 'Защита персональных данных', },
+                            { link: '#', name: 'Защита межфилиальных взаимодействий', },
+                            { link: '#', name: 'Защита виртуализации', },
+                            { link: '#', name: 'Защита подключения к СМЭВ', },
+                            { link: '#', name: 'Защита подключения к ИС ЕПТ', },
+                          ]
+                        }
+                      ]
+                    each column in menuColumns
+                      .dropdown-menu__column
+                        ul.dropdown-menu-list
+                          each item in column.items
+                            li.dropdown-menu-item(class=item.title ? 'dropdown-menu-item--title' : '')
+                              a(href=item.link)= item.name
+
           li.main-menu__item
             .menu-section
               .menu-section__title
