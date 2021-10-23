@@ -57,7 +57,7 @@ new Swiper('.banner-slider', {
   };
 
   new Swiper(config.el, {
-    loop: true,
+    //loop: true,
     navigation,
     slidesPerView: config.slidesPerView,
     spaceBetween: 24,
