@@ -26,6 +26,46 @@
   &__image {
     margin-left: -30px;
     padding-right: 80px;
+
+    .phone {
+      animation-name: phoneMove;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-duration: 2000ms;
+    }
+
+    .envelope {
+      animation-name: envelopeMove;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-duration: 2000ms;
+
+
+      .envelope-inner {
+        animation-name: envelopeScale;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 2000ms;
+        transform-origin: 80% 20%;
+      }
+
+
+    }
+
+    .computer {
+      animation-name: computerMove;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-duration: 2000ms;
+    }
+
+    .ellipses {
+      animation-name: ellipsesMove;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-duration: 2000ms;
+      transform-origin: 50% 80%;
+    }
   }
 
   &__fields {
@@ -39,5 +79,64 @@
 
   &__submit {
     margin-top: 32px;
+  }
+}
+
+@keyframes computerMove {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px)
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes phoneMove {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px)
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes ellipsesMove {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes envelopeMove {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(100px, -40px);
+  }
+}
+
+@keyframes envelopeScale {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  90% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(0)
   }
 }
