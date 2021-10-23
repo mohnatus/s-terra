@@ -1,5 +1,5 @@
 .btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   border-style: solid;
@@ -17,6 +17,10 @@
   color: $primary;
   border-color: $border;
 
+  &:hover {
+    border-color: $border-dark;
+  }
+
   &-lg {
     height: 54px;
     padding-left: 40px;
@@ -29,5 +33,9 @@
     background: $accent;
     color: white;
     border-color: $accent;
+
+    &:hover {
+      border-color: $accent;
+    }
   }
 }
