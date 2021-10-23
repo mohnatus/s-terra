@@ -1,8 +1,79 @@
 .header {
+  font-size: 1rem;
+  color: $primary;
+  font-weight: 500;
+
+  &__logo {
+    display: block;
+  }
+
   &__wrapper {
     display: flex;
+    align-items: center;
+    height: 80px;
   }
+
   .main-menu {
+    margin-left: auto;
+    margin-right: auto;
+
+    ul {
+      display: flex;
+
+      list-style: none;
+    }
+
+    li:not(:last-child) {
+      margin-right: 25px;
+    }
+
+    .menu-section {
+      &__title {
+        cursor: pointer;
+      }
+      &__toggler {
+        vertical-align: middle;
+        margin-left: 6px;
+      }
+    }
+  }
+  .contacts {
+    margin-right: 48px;
+    &__phone {
+      font-size: 17px;
+      display: block;
+      margin-bottom: 2px;
+      line-height: 1;
+    }
+    &-menu {
+      &__title {
+        font-size: 13px;
+        text-align: right;
+        cursor: pointer;
+      }
+      &__toggler {
+        vertical-align: middle;
+        margin-left: 6px;
+      }
+    }
+  }
+
+  .search {
+    margin-right: 20px;
+  }
+
+  .header-action {
+    width: 36px;
+    height: 36px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $border;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      border-color: $border-dark;
+    }
   }
 }

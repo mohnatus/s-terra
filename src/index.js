@@ -21,24 +21,36 @@ new Swiper('.banner-slider', {
 new Swiper('.partners-slider', {
   loop: true,
   navigation,
-
-  spaceBetween: 24,
-  slidesPerView: 'auto',
+  slidesPerView: 6,
+  spaceBetween: 24
 });
 
 new Swiper('.solutions-slider', {
   loop: true,
-  navigation
+  navigation,
+  slidesPerView: 3,
+  spaceBetween: 24
 });
 
 new Swiper('.cooperation-slider', {
   loop: true,
-  navigation
+  navigation,
+  slidesPerView: 3,
+  spaceBetween: 24
 });
 
 new Swiper('.cases-slider', {
   loop: true,
-  navigation
+  navigation,
+  slidesPerView: 3,
+  spaceBetween: 24
+});
+
+new Swiper('.news-slider', {
+  loop: true,
+  navigation,
+  slidesPerView: 4,
+  spaceBetween: 24
 });
 
 console.log('hello');

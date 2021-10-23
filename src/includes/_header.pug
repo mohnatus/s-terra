@@ -1,23 +1,45 @@
 header.header
   .container
     .header__wrapper
-      .logo
+      a.logo(href="#")
         img(src=require("../img/logo.png") alt="С-Терра логотип")
-      nav.nav
-        ul.main-menu
-          li.main-menu__item О компании
-          li.main-menu__item Каталог
-          li.main-menu__item Поддержка
-          li.main-menu__item Пресс-центр
+      nav.main-menu
+        ul
           li.main-menu__item
-            a(href="#") Партнёры
+            .menu-section
+              .menu-section__title
+                |О компании
+                svg.menu-section__toggler(width="9" height="5")
+                  use(xlink:href="#arrow-down" href="#arrow-down")
           li.main-menu__item
-            a(href="#") Контакты
+            .menu-section
+              .menu-section__title
+                |Каталог
+                svg.menu-section__toggler(width="9" height="5")
+                  use(xlink:href="#arrow-down" href="#arrow-down")
+          li.main-menu__item
+            .menu-section
+              .menu-section__title
+                |Поддержка
+                svg.menu-section__toggler(width="9" height="5")
+                  use(xlink:href="#arrow-down" href="#arrow-down")
+          li.main-menu__item
+            .menu-section
+              .menu-section__title
+                |Пресс-центр
+                svg.menu-section__toggler(width="9" height="5")
+                  use(xlink:href="#arrow-down" href="#arrow-down")
+          li.main-menu__item
+            a.menu-link(href="#") Партнёры
+          li.main-menu__item
+            a.menu-link(href="#") Контакты
       .contacts
-        .contacts__phone
-          a(href="tel:+74999409061") 8 (499) 940-90-61
-        .contacts__menu
-          |Связаться с нами
+        a.contacts__phone(href="tel:+74999409061") 8 (499) 940-90-61
+        .contacts-menu
+          .contacts-menu__title
+            |Связаться с нами
+            svg.contacts-menu__toggler(width="9" height="5")
+              use(xlink:href="#arrow-down" href="#arrow-down")
       button.search.header-action(type="button")
         img(src=require('../img/icons/search.svg') alt="")
       button.user.header-action( type="button" )

@@ -6,9 +6,12 @@
 
 a {
   text-decoration: none;
+  color: $primary;
 }
 
 button {
+  background: transparent;
+
   &,
   &:focus {
     outline: none;
